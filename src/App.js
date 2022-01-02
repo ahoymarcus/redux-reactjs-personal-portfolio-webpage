@@ -8,6 +8,7 @@ import Navbar from './components/Navbar';
 import AggregationTab from './components/AggregationTab';
 import ProjectList from './components/ProjectList';
 import OtherProjectsSlider from './components/OtherProjectsSlider';
+import Footer from './components/Footer';
 
 import { frontendProjects } from './data/frontendProjects';
 import { backendProjects } from './data/backendProjects';
@@ -88,12 +89,7 @@ function App() {
 				
 			</main>
 			
-			
-			<footer>
-				<p>
-					Marcus Vinícius Richa - Web Developer
-				</p>
-			</footer>
+			<Footer />
     </>
   );
 }

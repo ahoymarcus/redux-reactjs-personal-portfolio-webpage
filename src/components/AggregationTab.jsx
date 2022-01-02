@@ -11,7 +11,10 @@ const AggregationTab = () => {
 	
 	return (
 		<div className="projects">
-			<h3>AggregationTab</h3>
+			<h3>Tags</h3>
+			<ul>
+				<li>React-JS</li>
+			</ul>
 		</div>
 	);
 };
