@@ -38,7 +38,7 @@ main section#projects .projects-container-grid {
 	}
 }
 
-@media only screen and (min-width: 1355px) {
+@media only screen and (min-width: 1395px) {
 	main section#projects {  
 		padding: 5rem 6.5rem;
 	}

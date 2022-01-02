@@ -16,7 +16,7 @@ import { vanillaJSProjects } from './data/vanillaJSProjects';
 import { webdesignProjects } from './data/webdesignProjects';
 
 
-
+ 
 function App() {
 	const [ otherProjects, setOtherProjects ] = useState([...webdesignProjects, ...vanillaJSProjects]);
 	console.log(otherProjects);
