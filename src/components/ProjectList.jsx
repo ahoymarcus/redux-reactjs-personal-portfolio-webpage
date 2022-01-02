@@ -1,5 +1,8 @@
 import ProjectItem from './ProjectItem';
 
+// styles
+import './ProjectList.css'
+
 
 
 

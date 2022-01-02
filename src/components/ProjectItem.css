@@ -1,0 +1,127 @@
+/* Projects Section - Item */
+main section#projects .project-item {
+	display: grid;
+	grid-template-columns: 1fr;
+	/*flex-direction: column;*/
+}
+
+main section#projects .project-icon {
+	width: 100%;
+	height: 254px;
+	border-radius: 8px;
+	/*margin-bottom: 10px;*/
+}
+
+main section#projects .info-container {
+	background-color: #e3d6d647; /*hsl(212, 33%, 89%); white;*/
+	border-radius: 8px 8px 0 0;
+}
+
+main section#projects .btn-container {
+	display: grid;
+	grid-template-columns: 1fr 0.5fr 0.5fr;
+	grid-gap: 0.5rem;
+	
+	/*padding: 0.4rem 0.3rem 1rem 0.3rem;*/
+	padding: 0.4rem 0rem 1rem 0rem;
+	
+	max-height: 63.303px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+main section#projects .tab-header {
+	color: #ffffffc7;
+	background-color: #9d929273; /*#e3d6d647; hsl(212, 33%, 89%);*/
+	border: none;
+	text-transform: capitalize;
+	font-size: 1rem;
+	display: block;
+	cursor: pointer;
+}
+
+
+main section#projects .tab-header {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+main section#projects .tab-header a {
+	color: #933615;
+	text-transform: uppercase;
+	line-height: 1.5;
+	font-size: 1.1rem;
+}
+
+main section#projects .tab-header a:hover {
+	text-shadow: 2px 2px 1px #ffffffc7;
+}
+
+main section#projects .btn:hover {
+	/*background: rgb(152 42 42 / 30%);*/
+  color: rgb(110 63 63);
+	text-shadow: 2px 2px 1px rgb(152 42 42 / 30%);
+}
+
+
+main section#projects .info-container {
+	max-height: 260px;
+	overflow: hidden;
+}
+
+main section#projects .info-container:hover {
+	max-height: 290px;
+	overflow: hidden;
+}
+
+main section#projects .info-content {
+	border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.8rem 1rem 1rem;
+	line-height: 1;
+}
+
+main section#projects  .info-content p {
+	color: #28280e;
+	font-size: 1rem;
+	line-height: 1.2;
+}
+
+main section#projects .btn-toggle-description {
+	font-size: 16px;
+	border: none;
+	background-color: transparent;
+	color: #f5e23a;
+	cursor: pointer;
+}
+
+main section#projects .info-content .tag {
+	display: block;
+	text-align: center;
+	background-color: #21a121ad;
+	color: #f5eeda; /*#120702; #f7622b;*/
+	padding: 0.5px;
+}
+
+
+/* Media Queries */
+@media only screen and (min-width: 700px) {
+	main section#projects .project-item {
+		grid-template-columns: 0.8fr 1.2fr;
+		grid-gap: 1rem;
+	}
+}
+
+@media only screen and (min-width: 985px) {
+	main section#projects .project-item {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+	}
+}
+
+
+
+
+
+
+

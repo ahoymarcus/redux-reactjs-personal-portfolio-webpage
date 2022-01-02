@@ -1,11 +1,14 @@
 import { useState } from 'react';
 
+// styles
+import './OtherProjectsSlider.css';
+
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 //import { webdesignProjects } from '../data/webdesignProjects';
 
 
 
-const OtherProjects = ({ otherProjects }) => {
+const OtherProjectsSlider = ({ otherProjects }) => {
 	const [ index, setIndex ] = useState(0);
 	
 	const { title, image, urlApp, urlRepository, description, tags } = otherProjects[index];
@@ -77,6 +80,6 @@ const OtherProjects = ({ otherProjects }) => {
 
 
 
-export default OtherProjects
+export default OtherProjectsSlider
 
 

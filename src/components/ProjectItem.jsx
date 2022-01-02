@@ -1,5 +1,9 @@
 import { useState } from 'react';
 
+// styles
+import './ProjectItem.css';
+
+
 
 
 const ProjectItem = ({ type, title, image, urlApp, urlRepository, description, tags }) => {

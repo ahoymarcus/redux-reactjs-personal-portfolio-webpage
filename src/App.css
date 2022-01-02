@@ -1,3 +1,4 @@
+/* Global */
 * {
   margin: 0;
   padding: 0;
@@ -63,27 +64,7 @@ header, main {
 }
 
 
-/* Navbar */
-nav#navbar { 
-	position: fixed; 
-	display: flex; 
-	justify-content: flex-end; 
-	color: #ffffffc7; /*#2f2a1a; #2f0e02; #441504; #9c320a; #f7622b;*/ 
-	background-color: #6f7b7e; /*#78878c; */
-	width: 100%; 
-}
-nav#navbar p {
-	font-size: 2rem;
-	font-weight: 400;
-	padding-right: 40px; 
-	line-height: 2;
-}
-nav#navbar a { 
-	color: inherit; 
-}
-
-
-/* Welcome Section */
+/* WELCOME SECTION */
 main #welcome-section { 
 	/*clear: both;*/ 
 	display: flex; 
@@ -105,294 +86,8 @@ main #welcome-section p {
 	margin-top: 10px;	
 }
 
-  
-	
-/* Projects Section */	
-main section#projects { 
-	color: #ffffffc7; 
-	padding: 5rem 3rem;
-}
-
-main section#projects .projects { 
-	margin-bottom: 75px; 
-}
-main section#projects h2 { 
-	color: #ad6419; 
-	text-align: center; 
-}
-main section#projects h3 { 
-	color: #ffebaa; 
-	margin-bottom: 20px; 
-}
-
-main section#projects .projects-container-grid {
-	display: grid; 
-	grid-template-columns: minmax(335px, 1fr);
-	grid-gap: 5.2rem 4.3rem; 
-	/*width: 100%; */
-}
-
-main section#projects .project-item {
-	display: grid;
-	grid-template-columns: 1fr;
-	/*flex-direction: column;*/
-}
-
-main section#projects .project-icon {
-	width: 100%;
-	height: 254px;
-	border-radius: 8px;
-	/*margin-bottom: 10px;*/
-}
-
-main section#projects .info-container {
-	background-color: #e3d6d647; /*hsl(212, 33%, 89%); white;*/
-	border-radius: 8px 8px 0 0;
-}
-
-main section#projects .btn-container {
-	display: grid;
-	grid-template-columns: 1fr 0.5fr 0.5fr;
-	grid-gap: 0.5rem;
-	
-	/*padding: 0.4rem 0.3rem 1rem 0.3rem;*/
-	padding: 0.4rem 0rem 1rem 0rem;
-	
-	max-height: 63.303px;
-	border-radius: 8px;
-	overflow: hidden;
-}
-
-main section#projects .tab-header {
-	color: #ffffffc7;
-	background-color: #9d929273; /*#e3d6d647; hsl(212, 33%, 89%);*/
-	border: none;
-	text-transform: capitalize;
-	font-size: 1rem;
-	display: block;
-	cursor: pointer;
-}
-
-
-main section#projects .tab-header {
-	text-align: center;
-	margin-bottom: 0;
-}
-
-main section#projects .tab-header a {
-	color: #933615;
-	text-transform: uppercase;
-	line-height: 1.5;
-	font-size: 1.1rem;
-}
-
-main section#projects .tab-header a:hover {
-	text-shadow: 2px 2px 1px #ffffffc7;
-}
-
-main section#projects .btn:hover {
-	/*background: rgb(152 42 42 / 30%);*/
-  color: rgb(110 63 63);
-	text-shadow: 2px 2px 1px rgb(152 42 42 / 30%);
-}
-
-
-main section#projects .info-container {
-	max-height: 260px;
-	overflow: hidden;
-}
-
-main section#projects .info-container:hover {
-	max-height: 290px;
-	overflow: hidden;
-}
-
-main section#projects .info-content {
-	border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  padding: 0.8rem 1rem 1rem;
-	line-height: 1;
-}
-
-main section#projects  .info-content p {
-	color: #28280e;
-	font-size: 1rem;
-	line-height: 1.2;
-}
-
-main section#projects .btn-toggle-description {
-	font-size: 16px;
-	border: none;
-	background-color: transparent;
-	color: #f5e23a;
-	cursor: pointer;
-}
-
-main section#projects .info-content .tag {
-	display: block;
-	text-align: center;
-	background-color: #21a121ad;
-	color: #f5eeda; /*#120702; #f7622b;*/
-	padding: 0.5px;
-}
-
-@media only screen and (min-width: 700px) {
-	main section#projects .project-item {
-		grid-template-columns: 0.8fr 1.2fr;
-		grid-gap: 1rem;
-	}
-}
-
-@media only screen and (min-width: 985px) {
-	main section#projects {  
-		padding: 5rem 6.3rem;
-	}
-	
-	main section#projects .projects-container-grid {
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 5.2rem 6rem;
-	}
-	main section#projects .project-item {
-		grid-template-columns: 1fr;
-		grid-gap: 0;
-	}
-}
-
-
-@media only screen and (min-width: 1355px) {
-	main section#projects {  
-		padding: 5rem 6.5rem;
-	}
-	main section#projects .projects-container-grid {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 6rem 6.3rem;
-	}
-}
-
-
-
-/* Other Projects Section */
-main section#other-projects {
-	background-color: #e7e7b4;
-	color: #2f2a1a; 
-	padding: 2rem 3rem 4rem;
-}
-
-main section#other-projects .projects { 
-	margin-bottom: 75px; 
-}
-main section#other-projects h2 { 
-	color: #ad6419; 
-	text-align: center; 
-}
-main section#other-projects h3 { 
-	color: #2f2a1a;  
-	font-size: 1.6rem;
-	text-align: center;
-	/*margin-bottom: 20px;*/
-}
-
-main section#other-projects h4 { 
-	font-size: 2rem;
-	text-align: center;
-}
-
-main section#other-projects h5 { 
-	font-size: 1rem;
-}
-
-main section#other-projects h6 { 
-	font-size: 0.8rem;
-}
-
-
-main section#other-projects .other-projects {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-gap: 1.5rem;
-	margin-bottom: 1.5rem;
-}
-
-main section#other-projects .other-projects-img-container {
-	width: 400px;
-	height: 450px;
-	border-radius: 5px;
-}
-
-main section#other-projects .other-project-img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	border-radius: 5px;
-	
-	/*object-fit: cover;*/
-}
-
-main section#other-projects .other-projects-info {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-}
-
-main section#other-projects .repositories {
-	position: relative;
-	right: 115px;
-}
-
-
-main section#other-projects .btn-container {
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-main section#other-projects .prev-btn, main section#other-projects .next-btn {
-	background-color: #b97f4414; /*#ad6419; #e7e7b4;*/
-	font-size: 25px;
-	width: 60px;
-	padding: 8px 6px 6px;
-	border: none;
-	
-}
-
-main section#other-projects .prev-btn {
-	border-radius: 3px 0  0 3px;
-}
-main section#other-projects .next-btn {
-	border-radius: 0px 3px  3px 0;
-}
-
-@media only screen and (min-width: 600px) {
-	main section#other-projects .repositories {
-		right: 0px;
-	}
-	main section#other-projects .other-projects {
-		grid-template-columns: 0.5fr 1.3fr;
-	}
-	main section#other-projects .other-projects-img-container {
-		width: 300px;
-		height: 350px;
-	}
-}
-
-@media only screen and (min-width: 860px) {
-	main section#other-projects .repositories {
-		right: 120px;
-	}
-	main section#other-projects .other-projects {
-		grid-template-columns: 0.8fr 1.2fr;
-	}
-	
-	main section#other-projects .other-projects-img-container {
-		width: 400px;
-		height: 450px;
-	}
-}
-
-
-
-
-/* Contact Section */
+ 
+/* CONTACT SECTION */
 main section#contact { 
 	color: black; 
 	background-color: #f7622b; 
@@ -444,9 +139,7 @@ main section#contact .contact-links a {
 }
 
 
-
-
-/* Footer */
+/* FOOTER */
 footer { 
 	color: black; 
 	background-color: #589a58; 
@@ -468,8 +161,6 @@ footer a {
 }
 	
 	
-
-
 
 
 

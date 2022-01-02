@@ -1,4 +1,4 @@
-# Portifolio Web App -  React-JS
+# Redux Portifolio Web App - React-JS
 
 
 <br />
