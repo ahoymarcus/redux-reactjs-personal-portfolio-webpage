@@ -7,10 +7,12 @@ main section#projects {
 main section#projects .projects { 
 	margin-bottom: 75px; 
 }
+
 main section#projects h2 { 
 	color: #ad6419; 
 	text-align: center; 
 }
+
 main section#projects h3 { 
 	color: #ffebaa; 
 	margin-bottom: 20px; 

@@ -1,0 +1,26 @@
+/* Other Projects Section */
+main section#aggregation {
+	background-color: #080806; /*#8b897b; #7a7652;*/
+	color: #2f2a1a; 
+	padding: 2rem 3rem 4rem;
+}
+
+main section#aggregation .projects { 
+	margin-bottom: 75px; 
+}
+
+main section#aggregation h2 { 
+	color: #ad6419; 
+	text-align: center; 
+}
+
+main section#aggregation h3 { 
+	color: #ffebaa; 
+	margin-bottom: 20px; 
+}
+
+
+
+
+
+

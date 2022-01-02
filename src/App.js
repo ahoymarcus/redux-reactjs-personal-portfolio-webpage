@@ -5,6 +5,7 @@ import './App.css';
 
 // components
 import Navbar from './components/Navbar';
+import AggregationTab from './components/AggregationTab';
 import ProjectList from './components/ProjectList';
 import OtherProjectsSlider from './components/OtherProjectsSlider';
 
@@ -33,6 +34,14 @@ function App() {
 				>
 					<h1>Ahoooy, there! My name is Marcus Richa</h1>
 					<p>Welcome to my Portfolio Webpage.</p>
+				</section>
+				
+				<section 
+					id="aggregation"
+					aria-label="Aggregation Information"
+				>
+					<h2>My Technologies</h2>
+					<AggregationTab />
 				</section>
 				
 				<section 

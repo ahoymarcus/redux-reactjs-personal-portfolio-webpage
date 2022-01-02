@@ -44,14 +44,11 @@ main section#projects .tab-header {
 	text-transform: capitalize;
 	font-size: 1rem;
 	display: block;
+	text-align: center;
+	margin-bottom: 0;
 	cursor: pointer;
 }
 
-
-main section#projects .tab-header {
-	text-align: center;
-	margin-bottom: 0;
-}
 
 main section#projects .tab-header a {
 	color: #933615;

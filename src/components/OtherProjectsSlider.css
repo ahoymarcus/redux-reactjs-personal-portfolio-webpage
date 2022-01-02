@@ -1,17 +1,19 @@
 /* Other Projects Section */
 main section#other-projects {
-	background-color: #e7e7b4;
+	background-color: #ebd0c7; /*#f9cabc; #e7e7b4;*/
 	color: #2f2a1a; 
 	padding: 2rem 3rem 4rem;
 }
 
-main section#other-projects .projects { 
+/*main section#other-projects .projects { 
 	margin-bottom: 75px; 
-}
+}*/
+
 main section#other-projects h2 { 
 	color: #ad6419; 
 	text-align: center; 
 }
+
 main section#other-projects h3 { 
 	color: #2f2a1a;  
 	font-size: 1.6rem;
