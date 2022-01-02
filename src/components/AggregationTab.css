@@ -6,19 +6,58 @@ main section#aggregation {
 }
 
 main section#aggregation .projects { 
-	margin-bottom: 75px; 
+	margin-bottom: 75px;
 }
 
 main section#aggregation h2 { 
 	color: #ad6419; 
 	text-align: center; 
+	margin: 25px 0px 35px;
 }
 
 main section#aggregation h3 { 
 	color: #ffebaa; 
+	font-size: 2rem;
 	margin-bottom: 20px; 
 }
 
+.agregationtab-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+
+.search-bar {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	
+}
+
+form { 
+	display: flex;
+	justify-content: center;
+	width: 70%;
+}
+
+button {
+	padding: 0px 8px;
+	font-size: 20px;
+	cursor: pointer;
+	height: 38px;
+	border-radius: 10px;
+}
+
+input {
+	font-size: 18px;
+	width: 80%;
+	padding: 5px 5px 5px 10px;
+	height: 38px;
+	outline: none;
+	border-radius: 10px;
+}
 
 
 

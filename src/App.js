@@ -41,7 +41,7 @@ function App() {
 					id="aggregation"
 					aria-label="Aggregation Information"
 				>
-					<h2>My Technologies</h2>
+					
 					<AggregationTab />
 				</section>
 				
