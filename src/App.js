@@ -1,4 +1,12 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+
+import { 
+	setFrontendProjects,
+	setBackendProjects,
+	setVanillaJsProjects,
+	setWebDesignProjects
+} from './redux/actions/projectsActions';
 
 // styles
 import './App.css'; 
@@ -18,10 +26,15 @@ import { webdesignProjects } from './data/webdesignProjects';
 
  
 function App() {
-	const [ otherProjects, setOtherProjects ] = useState([...webdesignProjects, ...vanillaJSProjects]);
-	console.log(otherProjects);
+	// const [ otherProjects, setOtherProjects ] = useState([...webdesignProjects, ...vanillaJSProjects]);
+	// console.log(otherProjects);
 	
+	const dispatch = useDispatch();
 
+	dispatch(setFrontendProjects(frontendProjects));
+	dispatch(setBackendProjects(backendProjects));
+	dispatch(setVanillaJsProjects(vanillaJSProjects));
+	dispatch(setWebDesignProjects(webdesignProjects));
 
   return (
     <>
@@ -51,8 +64,8 @@ function App() {
 				>
 					<h2>These are some of my projects</h2>
 				
-					<ProjectList type="frontend" list={frontendProjects} />
-					<ProjectList type="backend" list={backendProjects} />		
+					{/*<ProjectList type="frontend" />*/}
+					{/*<ProjectList type="backend" />*/}		
 				</section>
 				
 				<section 
@@ -61,7 +74,7 @@ function App() {
 				>
 					<h2>Other Projects</h2>
 					
-					<OtherProjectsSlider otherProjects={otherProjects} />
+					{/*<OtherProjectsSlider />*/}
 					
 					<h3>Vanilla JavaScript and Web Desing</h3>
 						

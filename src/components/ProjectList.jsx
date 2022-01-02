@@ -6,7 +6,7 @@ import './ProjectList.css'
 
 
 
-const ProjectList = ({ type, list }) => {
+const ProjectList = () => {
 	const renderItem = list.map((item, index) => {
 		return <ProjectItem key={index} {...item} type={type} />
 	});

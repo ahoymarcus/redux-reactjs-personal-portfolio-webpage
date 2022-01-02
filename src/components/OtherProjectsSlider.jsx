@@ -8,10 +8,10 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 
 
-const OtherProjectsSlider = ({ otherProjects }) => {
+const OtherProjectsSlider = () => {
 	const [ index, setIndex ] = useState(0);
 	
-	const { title, image, urlApp, urlRepository, description, tags } = otherProjects[index];
+	//const { title, image, urlApp, urlRepository, description, tags } = otherProjects[index];
 	
 	//console.log(tags);
 	
@@ -41,7 +41,7 @@ const OtherProjectsSlider = ({ otherProjects }) => {
 	
 	
 	return (
-		<div >
+	<div >
 			<div className="btn-container">
 				<button className="prev-btn" onClick={prevProject}>
 					<FaChevronLeft />

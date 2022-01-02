@@ -5,8 +5,8 @@ import './ProjectItem.css';
 
 
 
-
-const ProjectItem = ({ type, title, image, urlApp, urlRepository, description, tags }) => {
+// { type, title, image, urlApp, urlRepository, description, tags }
+const ProjectItem = () => {
 	const [ active, setActive ] = useState('description');
 	const [ descBtnText, setDescBtnText ] = useState(' show more');
 	const [ descText, setDescText ] = useState(description.slice(0, 130) + '...');
