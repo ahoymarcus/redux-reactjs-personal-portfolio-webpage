@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import { useDispatch } from 'react-redux';
 
 import { 
@@ -26,9 +26,6 @@ import { webdesignProjects } from './data/webdesignProjects';
 
  
 function App() {
-	// const [ otherProjects, setOtherProjects ] = useState([...webdesignProjects, ...vanillaJSProjects]);
-	// console.log(otherProjects);
-	
 	const dispatch = useDispatch();
 
 

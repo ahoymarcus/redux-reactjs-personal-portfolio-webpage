@@ -12,29 +12,9 @@ const ProjectList = ({ type }) => {
 	
 	
 	
-	// const resultFront = frontendProjects.map((project, index) => (
-				// <ProjectItem key={index} type={type} data={project} />
-			// ));
-	// const resultBack = backendProjects.map((project, index) => (
-				 // <ProjectItem key={index} type={type} data={project} />
-			// ));
-			
-			
-	const renderList = (type) => {
-		if (Object.keys(`${type}Projects`).length === 0) {
-			return <p>Não há projetos</p>;
-		} else if (type === 'frontend') { 
-			
-			return frontendProjects.map((project, index) => (
-					<ProjectItem key={index} type={type} data={project} />
-				));
-		} else if (type === 'backend') {
-			
-			return backendProjects.map((project, index) => (
-				  <ProjectItem key={index} type={type} data={project} />
-				));
-		}
-	};
+	if (Object.keys(`${type}Projects`).length === 0) {
+		return <p>não há projetos disponíveis</p>;
+	}
 	
 	
 	return (
@@ -45,7 +25,15 @@ const ProjectList = ({ type }) => {
 			<h3>{type} projects</h3>
 			
 			<div className="projects-container-grid">
-				{renderList}
+				{type === 'frontend' ? (
+					frontendProjects.map((project, index) => {
+						return <ProjectItem key={index} type={type} {...project} />
+					})
+				) : (
+					backendProjects.map((project, index) => {
+						return <ProjectItem key={index} type={type} {...project} />
+					})
+				)}
 			</div>
 		</div>		
 	);
