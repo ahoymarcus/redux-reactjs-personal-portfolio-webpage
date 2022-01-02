@@ -31,10 +31,12 @@ function App() {
 	
 	const dispatch = useDispatch();
 
+
 	dispatch(setFrontendProjects(frontendProjects));
 	dispatch(setBackendProjects(backendProjects));
 	dispatch(setVanillaJsProjects(vanillaJSProjects));
 	dispatch(setWebDesignProjects(webdesignProjects));
+
 
   return (
     <>
@@ -64,8 +66,8 @@ function App() {
 				>
 					<h2>These are some of my projects</h2>
 				
-					{/*<ProjectList type="frontend" />*/}
-					{/*<ProjectList type="backend" />*/}		
+					<ProjectList type="frontend" />
+					<ProjectList type="backend" />		
 				</section>
 				
 				<section 
@@ -74,10 +76,10 @@ function App() {
 				>
 					<h2>Other Projects</h2>
 					
-					{/*<OtherProjectsSlider />*/}
+					<OtherProjectsSlider />
 					
 					<h3>Vanilla JavaScript and Web Desing</h3>
-						
+						 
 				</section>
 				
 				

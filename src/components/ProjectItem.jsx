@@ -1,16 +1,16 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 // styles
 import './ProjectItem.css';
 
 
 
-// { type, title, image, urlApp, urlRepository, description, tags }
-const ProjectItem = () => {
+const ProjectItem = ({ type, title, image, urlApp, urlRepository, description, tags }) => {
 	const [ active, setActive ] = useState('description');
 	const [ descBtnText, setDescBtnText ] = useState(' show more');
 	const [ descText, setDescText ] = useState(description.slice(0, 130) + '...');
-		
+	
 	
 	
 	let href;

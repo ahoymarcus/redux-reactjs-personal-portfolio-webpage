@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector} from 'react-redux';
 
 // styles
 import './OtherProjectsSlider.css';
@@ -11,9 +12,16 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const OtherProjectsSlider = () => {
 	const [ index, setIndex ] = useState(0);
 	
-	//const { title, image, urlApp, urlRepository, description, tags } = otherProjects[index];
+	const vanillaJSProjects = useSelector((state) => state.allProjects.vanillaJs);
+	const webdesignProjects = useSelector((state) => state.allProjects.webDesign);
+	
+	
+	const otherProjects = [...webdesignProjects, ...vanillaJSProjects];
+	
+	const { title, image, urlApp, urlRepository, description, tags } = otherProjects[index];
 	
 	//console.log(tags);
+	
 	
 	const checkNumber = (number) => {
     if (number > otherProjects.length - 1) {
