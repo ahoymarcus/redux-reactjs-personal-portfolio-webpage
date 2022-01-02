@@ -3,6 +3,13 @@ main section#projects .project-item {
 	display: grid;
 	grid-template-columns: 1fr;
 	/*flex-direction: column;*/
+	
+	transition: all 0.3s;
+}
+
+main section#projects .project-item:hover {
+	transform: scale(1.1);
+	transition: all 0.3s;
 }
 
 main section#projects .project-icon {
@@ -119,9 +126,15 @@ main section#projects .info-content .tag {
 	}
 }
 
-
-
-
+@media only screen and (min-width: 1355px) {
+	main section#projects .project-item {
+		transition: all 0.5s;
+	}
+	main section#projects .project-item:hover {
+		transform: scale(1.2);
+		transition: all 0.5s;
+	}
+}
 
 
 
