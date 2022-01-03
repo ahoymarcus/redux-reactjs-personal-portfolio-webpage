@@ -19,6 +19,7 @@ main section#aggregation h3 {
 	color: #ffebaa; 
 	font-size: 2rem;
 	margin-bottom: 20px; 
+	text-align: center;
 }
 
 .agregationtab-header {
@@ -48,6 +49,7 @@ button {
 	cursor: pointer;
 	height: 38px;
 	border-radius: 10px;
+	margin-left: 3px;
 }
 
 input {
@@ -57,6 +59,7 @@ input {
 	height: 38px;
 	outline: none;
 	border-radius: 10px;
+	margin-bottom: 50px;
 }
 
 
