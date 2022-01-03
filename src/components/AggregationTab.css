@@ -1,7 +1,7 @@
 /* Other Projects Section */
 main section#aggregation {
 	background-color: #080806; /*#8b897b; #7a7652;*/
-	color: #2f2a1a; 
+	color: gold; 
 	padding: 2rem 3rem 4rem;
 }
 
@@ -12,13 +12,13 @@ main section#aggregation .projects {
 main section#aggregation h2 { 
 	color: #ad6419; 
 	text-align: center; 
-	margin: 25px 0px 35px;
+	margin: 25px 0px 45px;
 }
 
 main section#aggregation h3 { 
 	color: #ffebaa; 
 	font-size: 2rem;
-	margin-bottom: 20px; 
+	margin-bottom: 35px; 
 	text-align: center;
 }
 
@@ -63,6 +63,22 @@ input {
 }
 
 
+.tag-list-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	
+	/*display: flex;
+	flex-wrap: wrap;*/
+	
+	padding: 0px 0px 0px 40px;
+}
 
+
+.tag-list-container li {
+	font-size: 1rem;
+	padding: 5px;
+	
+	/*text-align: center;*/
+}
 
 

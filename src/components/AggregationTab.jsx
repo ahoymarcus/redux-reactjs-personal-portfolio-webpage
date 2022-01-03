@@ -10,6 +10,7 @@ import './AggregationTab.css';
 const AggregationTab = () => {
 	const [ search, setSearch ] = useState('');
 	
+	
 	const allProjects = useSelector((state) => state.allProjects);
 	//console.log(allProjects);
 	
@@ -64,10 +65,10 @@ const AggregationTab = () => {
 				<h3>Total de Projetos: {totalProjectsSize}</h3>
 			</div>
 			<div className="aggregationTab-tags-container">
-				<h3>Tags</h3>
-				<ul>
+				<h3>Main Tags</h3>
+				<ul className="tag-list-container">
 					{uniqueTagsArr.map((tag, index) => {
-						return <li key={index}>{tag}</li>;
+						return <li key={index}>#{tag}</li>;
 					})}
 				</ul>
 			</div>
