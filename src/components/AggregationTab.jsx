@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
+import { mainTagsNames } from '../data/main-tags';
+
 // styles
 import './AggregationTab.css';
 
+// components
+import TagItem from './TagItem';
 
 
 
@@ -11,11 +15,12 @@ const AggregationTab = () => {
 	const [ search, setSearch ] = useState('');
 	
 	
-	const allProjects = useSelector((state) => state.allProjects);
-	//console.log(allProjects);
+	const allProjectsObject = useSelector((state) => state.allProjects);
+	//console.log(allProjectsObject);
 	
-	const allProjectsArr = [...allProjects.frontend, ...allProjects.backend, ...allProjects.vanillaJs, ...allProjects.webDesign];
-	const totalProjectsSize = allProjects.frontend.length + allProjects.backend.length + allProjects.vanillaJs.length + allProjects.webDesign.length;
+	const allProjectsArr = [...allProjectsObject.frontend, ...allProjectsObject.backend, ...allProjectsObject.vanillaJs, ...allProjectsObject.webDesign];
+	const totalProjectsArraySize = allProjectsObject.frontend.length + allProjectsObject.backend.length + allProjectsObject.vanillaJs.length + allProjectsObject.webDesign.length;
+	
 	
 	let completeTagsArr = [];
 	
@@ -29,7 +34,6 @@ const AggregationTab = () => {
 	
 	console.log(uniqueTagsSet);
 	const uniqueTagsArr = [...uniqueTagsSet];
-	
 	
 	
 	
@@ -62,15 +66,19 @@ const AggregationTab = () => {
 				</div>
 			</div>
 			<div className="info-numbers">
-				<h3>Total de Projetos: {totalProjectsSize}</h3>
+				<h3>Total de Projetos: <span className="aggregation-values">{totalProjectsArraySize}</span> projetos</h3>
 			</div>
 			<div className="aggregationTab-tags-container">
 				<h3>Main Tags</h3>
 				<ul className="tag-list-container">
 					{uniqueTagsArr.map((tag, index) => {
-						return <li key={index}>#{tag}</li>;
+						if (mainTagsNames.includes(tag.toLowerCase())) {
+							return <TagItem key={index} tag={tag}allProjectsArr={allProjectsArr} />;
+						}
 					})}
 				</ul>
+				
+				
 			</div>
 			
 		</div>

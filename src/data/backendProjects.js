@@ -77,7 +77,7 @@ export let backendProjects = [
 		urlApp: '',
 		image: '/images/backend/API-REST-com-Node-e-Express-JS.png',
 		description: 'O projeto serve como prática para lidar com bancos de dados relacionais a partir do Node-JS. Cria uma pequena API no Estilo Arquitetural REST com Node.js',
-		tags: ['Express-JS', 'Typescript', 'API REST', 'Pg (node-postgres)'],
+		tags: ['Express-JS', 'Typescript', 'API REST', 'Postgres'],
 	},
 	{
 		title: 'Timestamp Microservice',

@@ -1,0 +1,52 @@
+export const mainTagsNames = [
+'html',
+'css',
+'SASS',
+'vanilla-js',
+'react-js',
+'styled-components',
+'react-router-dom', 
+'redux',
+'react-redux', 
+'reduxjs-toolkit', 
+'axios', 
+'typescript', 
+'node-js', 
+'express-js', 
+'api rest', 
+'jwt', 
+'jest', 
+'chai', 
+'mocha', 
+'mongodb', 
+'mysql', 
+'postgres'
+];
+
+export const mainTags = [
+	{name: 'HTML', count: 0},
+	{name: 'CSS', count: 0},
+	{name: 'SASS', count: 0},
+	{name: 'Vanilla-JS', count: 0},
+	{name: 'React-JS', count: 0},
+	{name: 'Styled-components', count: 0},
+	{name: 'React-Router-Dom', count: 0},
+	{name: 'Redux', count: 0},
+	{name: 'React-Redux', count: 0},
+	{name: 'Reduxjs-Toolkit', count: 0},
+	{name: 'Axios', count: 0},
+	{name: 'Typescript', count: 0},
+	{name: 'Node-JS', count: 0},
+	{name: 'Express-JS', count: 0},
+	{name: 'API REST', count: 0},
+	{name: 'JWT', count: 0},
+	{name: 'Jest', count: 0},
+	{name: 'Chai', count: 0},
+	{name: 'Mocha', count: 0},
+	{name: 'MongoDB', count: 0},
+	{name: 'MySQL', count: 0},
+	{name: 'Postgress', count: 0},
+];
+
+
+
