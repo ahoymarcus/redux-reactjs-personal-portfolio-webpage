@@ -4,26 +4,19 @@ import { mainTags } from '../data/main-tags';
 
 
 	
-const TagItem = ({ tag, allProjectsArr }) => {
+const TagItem = ({ tag }) => {
+	console.log(tag);
 	
-
-		
-	// allProjectsArr.map((project) => {
-		// if (project.tags.included(tag.toLowerCase())) {
-			// mainTags.map((tag) => {
-				// if (tag.name === tag) {
-					// tag.count += 1;
-				// }
-			// });
-		// }
-	// });
+	const result = mainTags.map((value) => {
+		if (value.name.toLowerCase() === tag) {
+			return value.count;
+		}
+	});
 	
-	// return <li>#{tag}: {tag.count}</li>;
-	
-	
+	console.log(result);
 	
 	return (
-		<li>#{tag}</li>
+		<li>#{tag} (<span className="number-values">{result}</span>)</li>
 	);
 };
 

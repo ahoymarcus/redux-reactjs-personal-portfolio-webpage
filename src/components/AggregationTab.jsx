@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import { mainTagsNames } from '../data/main-tags';
+import { mainTagsNames, mainTags } from '../data/main-tags';
 
 // styles
 import './AggregationTab.css';
@@ -37,6 +37,23 @@ const AggregationTab = () => {
 	
 	
 	
+	allProjectsArr.forEach((project) => {
+		mainTagsNames.map((tag) => {
+			if (project.tags.includes(tag)) {
+				console.log(tag);
+				
+				mainTags.map((obj) => {
+					if (obj.name.toLowerCase() === tag) {
+						obj.count += 1;
+					}
+				});
+			}
+		});
+
+	});
+	
+	console.log(mainTags);
+	
 	
 	
 	
@@ -66,14 +83,14 @@ const AggregationTab = () => {
 				</div>
 			</div>
 			<div className="info-numbers">
-				<h3>Total de Projetos: <span className="aggregation-values">{totalProjectsArraySize}</span> projetos</h3>
+				<h3>Total de Projetos: <span className="number-values">{totalProjectsArraySize}</span> projetos</h3>
 			</div>
 			<div className="aggregationTab-tags-container">
 				<h3>Main Tags</h3>
 				<ul className="tag-list-container">
 					{uniqueTagsArr.map((tag, index) => {
 						if (mainTagsNames.includes(tag.toLowerCase())) {
-							return <TagItem key={index} tag={tag}allProjectsArr={allProjectsArr} />;
+							return <TagItem key={index} tag={tag} />;
 						}
 					})}
 				</ul>

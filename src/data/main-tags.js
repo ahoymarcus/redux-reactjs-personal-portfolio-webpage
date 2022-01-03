@@ -1,8 +1,8 @@
 export const mainTagsNames = [
 'html',
 'css',
-'SASS',
-'vanilla-js',
+'scss',
+'javascript',
 'react-js',
 'styled-components',
 'react-router-dom', 
@@ -26,8 +26,8 @@ export const mainTagsNames = [
 export const mainTags = [
 	{name: 'HTML', count: 0},
 	{name: 'CSS', count: 0},
-	{name: 'SASS', count: 0},
-	{name: 'Vanilla-JS', count: 0},
+	{name: 'SCSS', count: 0},
+	{name: 'JavaScript', count: 0},
 	{name: 'React-JS', count: 0},
 	{name: 'Styled-components', count: 0},
 	{name: 'React-Router-Dom', count: 0},
@@ -35,7 +35,7 @@ export const mainTags = [
 	{name: 'React-Redux', count: 0},
 	{name: 'Reduxjs-Toolkit', count: 0},
 	{name: 'Axios', count: 0},
-	{name: 'Typescript', count: 0},
+	{name: 'TypeScript', count: 0},
 	{name: 'Node-JS', count: 0},
 	{name: 'Express-JS', count: 0},
 	{name: 'API REST', count: 0},
@@ -45,7 +45,7 @@ export const mainTags = [
 	{name: 'Mocha', count: 0},
 	{name: 'MongoDB', count: 0},
 	{name: 'MySQL', count: 0},
-	{name: 'Postgress', count: 0},
+	{name: 'Postgres', count: 0},
 ];
 
 

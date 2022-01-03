@@ -4,8 +4,8 @@ export let webdesignProjects = [
 		urlRepository: 'https://github.com/ahoymarcus/musica-erudita',
 		urlApp: 'https://musica-erudita.netlify.app/',
 		image: '/images/web-design/mus-erudita-icon-bigger-page.png',
-		description: 'Meu site pessoal de estudo Web Design: páginas responsivas, padrão “mobile-first”, SASS Modular, CSS-Grid, SVG-Animation (ver 2.0)',
-		tags: ['HTML', 'CSS', 'JavaScript', 'SASS', 'SVG-Animation'],
+		description: 'Meu site pessoal de estudo Web Design: páginas responsivas, padrão “mobile-first”, SASS Modular, css-Grid, SVG-Animation (ver 2.0)',
+		tags: ['html', 'css', 'javascript', 'sass', 'svg-animation'],
 	},
 	{
 		title: 'Tribure Page',
@@ -13,7 +13,7 @@ export let webdesignProjects = [
 		urlApp: 'https://tribute-page-bach-freecodecamp.netlify.app/',
 		image: '/images/web-design/tribure-page-icon-complete-page.png',
 		description: 'Projeto da certificação Web Design da Frecodecamp.org de 300hs. Trata-se do design de uma página web com o intento de fazer tributo a pessoas célebres.',
-		tags: ['HTML', 'CSS'],
+		tags: ['html', 'css'],
 	},
 	{
 		title: 'Technical Documentation Clone Page',
@@ -21,7 +21,7 @@ export let webdesignProjects = [
 		urlApp: 'https://technical-mongodb-mockup-doc-page-freecodecamp.netlify.app/',
 		image: '/images/web-design/technical-page-icon-bigger-page.png',
 		description: 'Projeto da certificação Web Design da Frecodecamp.org de 300hs. Trata-se do desafio de clonar páginas web conhecidas. No caso deste projeto, foi clonada uma página de documentação do banco de dados MongoDB.',
-		tags: ['HTML', 'CSS'],
+		tags: ['html', 'css'],
 	},
 	{
 		title: 'Product Landing Page',
@@ -29,23 +29,23 @@ export let webdesignProjects = [
 		urlApp: 'https://product-landing-page-freecodecamp-org.netlify.app/',
 		image: '/images/web-design/product-page-icon-bigger-page.png',
 		description: 'Projeto da certificação Web Design da Frecodecamp.org de 300hs. O desafio visa emular um design de web page voltada para a apresentação de produtos on-line.',
-		tags: ['HTML', 'CSS'],
+		tags: ['html', 'css'],
 	},
 	{
 		title: 'Galeria de Imagens',
 		urlRepository: 'https://github.com/ahoymarcus/css3-com-grid-system-transform-property',
 		urlApp: 'https://css3-com-grid-system-transform-property.netlify.com/coro-galeria-de-imagens.html',
 		image: '/images/web-design/galeriaimgs-icon-bigger-page.png',
-		description: 'Página de treino voltada à prática de algumas propriedades CSS, entre elas o Grid System e CSS Transformation.',
-		tags: ['HTML', 'CSS', 'Grid System'],
+		description: 'Página de treino voltada à prática de algumas propriedades css, entre elas o Grid System e css Transformation.',
+		tags: ['html', 'css', 'Grid System'],
 	},
 	{
 		title: 'Clone NetFlix',
 		urlRepository: 'https://github.com/ahoymarcus/clone-netflix',
 		urlApp: 'https://clone-netflix-com-dio.netlify.app/',
 		image: '/images/web-design/clone-netflix-icon.png',
-		description: 'Projeto CLONE NETFLIX com a Digital Innovation One. Recriando a interface do principal site de streaming utilizando tecnologias como HTML5, CSS3 e JAVASCRIPT.',
-		tags: ['HTML', 'CSS', 'Variávies CSS', 'Flexbox', 'Plugins Jquery', 'Font Awesome', 'JavaScript'],
+		description: 'Projeto CLONE NETFLIX com a Digital Innovation One. Recriando a interface do principal site de streaming utilizando tecnologias como HTML5, CSS3 e javascript.',
+		tags: ['html', 'css', 'variávies css', 'flexbox', 'plugins jquery', 'font awesome', 'javascript'],
 	},
 	{
 		title: 'Survey Form',
@@ -53,7 +53,7 @@ export let webdesignProjects = [
 		urlApp: 'https://buil-a-survey-form-freecodecamp.netlify.app/',
 		image: '/images/web-design/form-page-icon.png',
 		description: 'Projeto da certificação Web Design da Frecodecamp.org de 300hs. O desafio consta de criar uma página web com formulário.',
-		tags: ['HTML', 'CSS'],
+		tags: ['html', 'css'],
 	},
 	{
 		title: 'Clone Instagram',
@@ -61,7 +61,7 @@ export let webdesignProjects = [
 		urlApp: 'https://flexbox-instagram-com-dio.netlify.app/',
 		image: '/images/web-design/clone-instagram-icon.png',
 		description: 'Projeto do curso de web desing da Digital Innovation One para clonar a página inicial do Instagram.',
-		tags: ['HTML', 'CSS'],
+		tags: ['html', 'css'],
 	},
 ];
 
