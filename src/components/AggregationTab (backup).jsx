@@ -1,30 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 
-import { mainTagsNames } from '../common/main-tags';
+import { mainTagsNames, mainTags } from '../common/main-tags';
 
-import { setTagAddition } from '../redux/actions/projectsActions';
 
 // styles
 import './AggregationTab.css';
 
 // components
-import AggregateTagItem from './AggregateTagItem';
+import TagItem from './TagItem';
 
 
 
 const AggregationTab = () => {
 	const [ search, setSearch ] = useState('');
 	
-	const dispatch = useDispatch();
-	
 	const allProjectsObject = useSelector((state) => state.allProjects);
 	//console.log(allProjectsObject);
 	
-	const allProjectsArr = useSelector((state) => state.allProjects.allProjects);
-	
-	const mainTags = useSelector((state) => state.allProjects.mainTags);
-	console.log(mainTags);
+	const allProjectsArr = [...allProjectsObject.frontend, ...allProjectsObject.backend, ...allProjectsObject.vanillaJs, ...allProjectsObject.webDesign];
 	
 	const totalProjectsArraySize = allProjectsObject.frontend.length + allProjectsObject.backend.length + allProjectsObject.vanillaJs.length + allProjectsObject.webDesign.length;
 	
@@ -51,9 +45,7 @@ const AggregationTab = () => {
 					
 					mainTags.forEach((obj) => {
 						if (obj.name.toLowerCase() === tag) {
-							//obj.count += 1;
-							
-							dispatch(setTagAddition(tag));
+							obj.count += 1;
 						}
 					});
 				}
@@ -64,12 +56,8 @@ const AggregationTab = () => {
 	
 	
 	useEffect(() => {
-		const timer = setTimeout(() => {
-			aggregateTags(allProjectsArr);
-			console.log(allProjectsArr);
-		}, 1000);
-		
-		return () => clearTimeout(timer);
+		aggregateTags(allProjectsArr);
+		console.log(allProjectsArr);
 	}, []);
 	
 	
@@ -108,7 +96,7 @@ const AggregationTab = () => {
 				<ul className="tag-list-container">
 					{uniqueTagsArr.map((tag, index) => {
 						if (mainTagsNames.includes(tag.toLowerCase())) {
-							return <AggregateTagItem key={index} tag={tag} />;
+							return <TagItem key={index} tag={tag} />;
 						}
 					})}
 				</ul>

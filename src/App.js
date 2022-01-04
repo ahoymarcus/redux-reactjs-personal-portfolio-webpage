@@ -5,7 +5,9 @@ import {
 	setFrontendProjects,
 	setBackendProjects,
 	setVanillaJsProjects,
-	setWebDesignProjects
+	setWebDesignProjects,
+	setMainTags,
+	setAllProjects
 } from './redux/actions/projectsActions';
 
 // styles
@@ -22,6 +24,7 @@ import { frontendProjects } from './data/frontendProjects';
 import { backendProjects } from './data/backendProjects';
 import { vanillaJSProjects } from './data/vanillaJSProjects';
 import { webdesignProjects } from './data/webdesignProjects';
+import { mainTags } from './common/main-tags';
 
 
  
@@ -33,6 +36,9 @@ function App() {
 	dispatch(setBackendProjects(backendProjects));
 	dispatch(setVanillaJsProjects(vanillaJSProjects));
 	dispatch(setWebDesignProjects(webdesignProjects));
+	dispatch(setAllProjects([...frontendProjects, ...backendProjects, ...vanillaJSProjects, ...webdesignProjects]));
+	
+	dispatch(setMainTags(mainTags));
 
 
   return (

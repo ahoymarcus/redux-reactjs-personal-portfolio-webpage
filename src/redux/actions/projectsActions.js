@@ -6,6 +6,9 @@ import { ActionTypes } from '../constants/action-types';
 // SET_BACKEND_PROJECTS: 'SET_BACKEND_PROJECTS',
 // SET_VANILLAJS_PROJECTS: 'SET_VANILLAJS_PROJECTS',
 // SET_WEB_DESIGN_PROJECTS: 'SET_WEB_DESIGN_PROJECTS'
+// SET_ALL_PROJECTS
+// SET_MAIN_TAGS
+// SET_TAG_COUNT
 export const setFrontendProjects = (frontend) => {
 	return {
 		type: ActionTypes.SET_FRONTEND_PROJECTS,
@@ -34,6 +37,26 @@ export const setWebDesignProjects = (webDesign) => {
 	};
 };
 
+export const setAllProjects = (allProjects) => {
+	return {
+		type: ActionTypes.SET_ALL_PROJECTS,
+		payload: allProjects
+	};
+};
+
+export const setMainTags = (mainTags) => {
+	return {
+		type: ActionTypes.SET_MAIN_TAGS,
+		payload: mainTags
+	};
+};
+
+export const setTagAddition = (tag) => {
+	return {
+		type: ActionTypes.SET_TAG_COUNT,
+		payload: tag
+	};
+};
 
 
 

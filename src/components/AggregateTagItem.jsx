@@ -1,19 +1,20 @@
 import React from 'react';
 
-import { mainTags } from '../data/main-tags';
+import { useSelector } from 'react-redux';
 
 
 	
-const TagItem = ({ tag }) => {
-	console.log(tag);
+const AggregateTagItem = ({ tag }) => {
+	//console.log(tag);
+	
+	const mainTags = useSelector((state) => state.allProjects.mainTags);
 	
 	const result = mainTags.map((value) => {
 		if (value.name.toLowerCase() === tag) {
 			return value.count;
 		}
 	});
-	
-	console.log(result);
+
 	
 	return (
 		<li>#{tag} (<span className="number-values">{result}</span>)</li>
@@ -22,6 +23,6 @@ const TagItem = ({ tag }) => {
 
 
 
-export default TagItem;
+export default AggregateTagItem;
 
 

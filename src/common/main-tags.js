@@ -49,4 +49,26 @@ export const mainTags = [
 ];
 
 
+// export const aggregateTags = (tagArr) => {
+	// tagArr.forEach((project) => {
+		// mainTagsNames.forEach((tag) => {
+			// if (project.tags.includes(tag)) {
+				// console.log(tag);
+				
+				// mainTags.forEach((obj) => {
+					// if (obj.name.toLowerCase() === tag) {
+						// obj.count += 1;
+					// }
+				// });
+			// }
+		// });
+
+	// });
+	
+	// console.log(mainTags);
+// };
+
+
+
+
 

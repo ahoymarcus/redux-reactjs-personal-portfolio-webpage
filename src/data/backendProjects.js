@@ -29,7 +29,7 @@ export let backendProjects = [
 		urlApp: '',
 		image: '/images/backend/store-api-icon-big.png',
 		description: 'A API permite consultas de maneira dinâmica através da passagem de parâmetros ou operadores de comparação, por exemplo, a partir dos seus campos, como nome, preço ou companhia, etc...',
-		tags: ['express-js', 'dotenv', 'mongoose'],
+		tags: ['express-js', 'dotenv', 'mongodb'],
 	},
 	{
 		title: 'jwt Exercise Studyapp',
@@ -37,7 +37,7 @@ export let backendProjects = [
 		urlApp: '',
 		image: '/images/backend/jwt-basics-studyapp-freecodecamp.org.png',
 		description: 'Uma aplicação de estudo para treinar o padrão de autenticação JSON Web Token (jwt), uma importante parte dentro do desenvolvimento de aplicações web quanto ao quesito de segurança.',
-		tags: ['node-js', 'jwt', 'express-async-errors', 'dotenv', 'mongoose'],
+		tags: ['node-js', 'jwt', 'express-async-errors', 'dotenv', 'mongodb'],
 	},
 	{
 		title: 'API with typescript',
@@ -67,9 +67,9 @@ export let backendProjects = [
 		title: 'Encurtador de URL',
 		urlRepository: 'https://github.com/ahoymarcus/url-shortener-nodejs-typescript-dio',
 		urlApp: '',
-		image: '/images/backend/encurtador-de-url-nodejs-typescript-typescript.png',
+		image: '/images/backend/encurtador-de-url-nodejs-typescript-mongodb.png',
 		description: 'O projeto serve como prática para o desenvolvimento de uma aplicação para encurtar URL. Trata-se de uma API construída com o node-js, o typescript e o banco de dados typescript.',
-		tags: ['node-js', 'typescript', 'mongoose'],
+		tags: ['node-js', 'typescript', 'mongodb'],
 	},
 	{
 		title: 'API with typescript',
@@ -133,7 +133,7 @@ export let backendProjects = [
 		urlApp: '',
 		image: '/images/backend/local-library-icon.png',
 		description: 'Projeto de desenvolvimento backend to create a small library web page using node-js and express-js.',
-		tags: ['express-js', 'pug view', 'typescript', 'mongoose', 'luxon (date formatter)'],
+		tags: ['express-js', 'pug view', 'typescript', 'mongodb', 'luxon (date formatter)'],
 	},
 	{
 		title: 'Music Database - express-js',
@@ -149,7 +149,7 @@ export let backendProjects = [
 		urlApp: '',
 		image: '/images/backend/database-node-icon.png',
 		description: 'Aplicação Web com Node e Express do livro "Programação web com Node e Express: beneficiando-se da stack JavaScript", do professor Ethan Brown.',
-		tags: ['handlebars', 'jest', 'morgan', 'mongoose'],
+		tags: ['handlebars', 'jest', 'morgan', 'mongodb'],
 	},
 	{
 		title: 'Request Header Parser',
