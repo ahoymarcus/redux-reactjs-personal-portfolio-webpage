@@ -66,7 +66,7 @@ export let backendProjects = [
 	{
 		title: 'Encurtador de URL',
 		urlRepository: 'https://github.com/ahoymarcus/url-shortener-nodejs-typescript-dio',
-		urlApp: '',
+		urlApp: 'https://github.com/ahoymarcus/url-shortener-nodejs-typescript-dio',
 		image: '/images/backend/encurtador-de-url-nodejs-typescript-mongodb.png',
 		description: 'O projeto serve como prática para o desenvolvimento de uma aplicação para encurtar URL. Trata-se de uma API construída com o node-js, o typescript e o banco de dados typescript.',
 		tags: ['node-js', 'typescript', 'mongodb'],

@@ -86,7 +86,7 @@ const AggregationTab = () => {
 		<div className="projects">
 			<div className="agregationtab-header">
 				<h2>My Technologies</h2>
-				<div className="search-bar">
+				{/*<div className="search-bar">
 					<form onSubmit={handleSubmit}>
 						<input 
 							type="text"
@@ -98,7 +98,7 @@ const AggregationTab = () => {
 							<i className="fa fa-search"></i>
 						</button>
 					</form>
-				</div>
+				</div>*/}
 			</div>
 			<div className="info-numbers">
 				<h3>Total de Projetos: <span className="number-values">{totalProjectsArraySize}</span> projetos</h3>
