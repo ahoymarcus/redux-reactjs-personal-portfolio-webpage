@@ -20,14 +20,14 @@ main section#projects h3 {
 
 main section#projects .projects-container-grid {
 	display: grid; 
-	grid-template-columns: minmax(335px, 1fr);
+	grid-template-columns: minmax(362px, 1fr);
 	grid-gap: 5.2rem 4.3rem; 
 	/*width: 100%; */
 }
 
 
 /* Media Queries */
-@media only screen and (min-width: 985px) {
+@media only screen and (min-width: 1040px) {
 	main section#projects {  
 		padding: 5rem 6.3rem;
 	}

@@ -108,15 +108,16 @@ main section#projects .info-content .tag {
 }
 
 
-/* Media Queries */
-@media only screen and (min-width: 700px) {
+/* Media Queries */ 
+@media only screen and (min-width: 735px) {
+	/* card min-size: 362 * 2 = 724px */
 	main section#projects .project-item {
 		grid-template-columns: 0.8fr 1.2fr;
 		grid-gap: 1rem;
 	}
 }
 
-@media only screen and (min-width: 985px) {
+@media only screen and (min-width: 1040px) {
 	main section#projects .project-item {
 		grid-template-columns: 1fr;
 		grid-gap: 0;

@@ -2,13 +2,14 @@ import { ActionTypes } from '../constants/action-types';
 
 
 
-// SET_FRONTEND_PROJECTS: 'SET_FRONTEND_PROJECTS',
-// SET_BACKEND_PROJECTS: 'SET_BACKEND_PROJECTS',
-// SET_VANILLAJS_PROJECTS: 'SET_VANILLAJS_PROJECTS',
-// SET_WEB_DESIGN_PROJECTS: 'SET_WEB_DESIGN_PROJECTS'
+// SET_FRONTEND_PROJECTS
+// SET_BACKEND_PROJECTS
+// SET_VANILLAJS_PROJECTS
+// SET_WEB_DESIGN_PROJECTS
 // SET_ALL_PROJECTS
 // SET_MAIN_TAGS
 // SET_TAG_COUNT
+// SET_SELECTED
 export const setFrontendProjects = (frontend) => {
 	return {
 		type: ActionTypes.SET_FRONTEND_PROJECTS,
@@ -57,6 +58,14 @@ export const setTagAddition = (tag) => {
 		payload: tag
 	};
 };
+
+export const setSelected = (elemt) => {
+	return {
+		type: ActionTypes.SET_SELECTED,
+		payload: elemt
+	};
+};
+
 
 
 

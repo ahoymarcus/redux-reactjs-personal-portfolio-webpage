@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { mainTagsNames } from '../common/main-tags';
 
-import { setTagAddition } from '../redux/actions/projectsActions';
+import { setTagAddition, setSelected } from '../redux/actions/projectsActions';
 
 // styles
 import './AggregationTab.css';
@@ -14,17 +14,14 @@ import AggregationTagItem from './AggregationTagItem';
 
 
 const AggregationTab = () => {
-	const [ search, setSearch ] = useState('');
-	
 	const dispatch = useDispatch();
 	
+	const selected = useSelector((state) => state.allProjects.selected);	
 	const allProjectsObject = useSelector((state) => state.allProjects);
-	//console.log(allProjectsObject);
-	
 	const allProjectsArr = useSelector((state) => state.allProjects.allProjects);
-	
 	const mainTags = useSelector((state) => state.allProjects.mainTags);
-	console.log(mainTags);
+	
+	
 	
 	const totalProjectsArraySize = allProjectsObject.frontend.length + allProjectsObject.backend.length + allProjectsObject.vanillaJs.length + allProjectsObject.webDesign.length;
 	
@@ -47,11 +44,10 @@ const AggregationTab = () => {
 		tagArr.forEach((project) => {
 			mainTagsNames.forEach((tag) => {
 				if (project.tags.includes(tag)) {
-					console.log(tag);
+					//console.log(tag);
 					
 					mainTags.forEach((obj) => {
 						if (obj.name.toLowerCase() === tag) {
-							//obj.count += 1;
 							
 							dispatch(setTagAddition(tag));
 						}
@@ -72,33 +68,28 @@ const AggregationTab = () => {
 		return () => clearTimeout(timer);
 	}, []);
 	
-	
+	const handleChange = (e) => {
+		console.log(e.target.value);
 		
-	
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		
-		console.log(search);
+		dispatch(setSelected(e.target.value));
 	};
+	
 	
 	
 	return (
 		<div className="projects">
 			<div className="agregationtab-header">
 				<h2>My Technologies</h2>
-				{/*<div className="search-bar">
-					<form onSubmit={handleSubmit}>
-						<input 
-							type="text"
-							value={search}
-							onChange={(e) => setSearch(e.target.value)}
-							placeholder="search for some tech"
-						/>
-						<button type="submit">
-							<i className="fa fa-search"></i>
-						</button>
+				<div className="select-option">
+					<form>
+						<select value={selected} onChange={handleChange}>
+							<option value="All">All</option>
+							<option value="frontend">Frontend</option>
+							<option value="backend">Backend</option>
+							<option value="vanillaJS">VanillaJS</option>
+						</select>						
 					</form>
-				</div>*/}
+				</div>
 			</div>
 			<div className="info-numbers">
 				<h3>Total de Projetos: <span className="number-values">{totalProjectsArraySize}</span> projetos</h3>

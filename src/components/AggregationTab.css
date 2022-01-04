@@ -29,7 +29,7 @@ main section#aggregation h3 {
 
 
 
-.search-bar {
+.select-option {
 	width: 80%;
 	display: flex;
 	justify-content: center;
@@ -42,6 +42,16 @@ form {
 	width: 70%;
 }
 
+select {
+	font-size: 18px;
+	width: 40%;
+	padding: 5px 5px 5px 10px;
+	height: 38px;
+	outline: none;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
 button {
 	padding: 0px 8px;
 	font-size: 20px;
@@ -51,15 +61,7 @@ button {
 	margin-left: 3px;
 }
 
-input {
-	font-size: 18px;
-	width: 80%;
-	padding: 5px 5px 5px 10px;
-	height: 38px;
-	outline: none;
-	border-radius: 10px;
-	margin-bottom: 10px;
-}
+
 
 
 
