@@ -1,21 +1,21 @@
 /* Other Projects Section */
-main section#aggregation {
+main section.aggregation {
 	background-color: #080806; /*#8b897b; #7a7652;*/
 	color: #d7c773; 
 	padding: 2rem 3rem 4rem;
 }
 
-main section#aggregation .projects { 
+main section.aggregation .projects { 
 	margin-bottom: 15px;
 }
 
-main section#aggregation h2 { 
+main section.aggregation h2 { 
 	color: #ad6419; 
 	text-align: center; 
 	margin: 30px 0px 35px;
 }
 
-main section#aggregation h3 {  
+main section.aggregation h3 {  
 	font-size: 2rem;
 	margin-top: 55px; 
 	text-align: center;

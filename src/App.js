@@ -69,6 +69,7 @@ function App() {
       <main>
 				<section 
 					id="welcome-section" 
+					className="welcome-section" 
 					aria-label="Welcome"
 				>
 					<h1>Ahoooy, there! My name is Marcus Richa</h1>
@@ -77,20 +78,23 @@ function App() {
 				
 				<section 
 					id="aggregation"
+					className="aggregation"
 					aria-label="Aggregation Information"
 				>
 					<AggregationTab />
 				</section>
 				
 				<section 
-					id="projects" 
+					id="frontend-projects"
+					className="projects" 
 					aria-label="Web Development Projects"
 				>
 					<ProjectList type="frontend" />
 				</section>
 				
 				<section 
-					id="projects" 
+					id="backend-projects"
+					className="projects" 
 					aria-label="Web Development Projects"
 				>
 					
@@ -99,13 +103,18 @@ function App() {
 				
 				<section 
 					id="other-projects" 
+					className="other-projects" 
 					aria-label="Web Development Projects"
 				>
 					<OtherProjectsSlider />
 				</section>
 				
 				
-				<section id="contact" aria-label="Contacts">
+				<section 
+					id="contact" 
+					className="contact" 
+					aria-label="Contacts"
+				>
 					<div className="contact-header">
 						<h2>Jump on board skipper...</h2>
 						<p>How do you take your coffee?</p>

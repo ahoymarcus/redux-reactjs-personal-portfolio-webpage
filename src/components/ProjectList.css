@@ -1,24 +1,24 @@
 /* Projects Section - List */	
-main section#projects { 
+main section.projects { 
 	color: #ffffffc7; 
 	padding: 2rem 3rem 5rem;
 }
 
-main section#projects .projects { 
+main section.projects { 
 	/*margin-bottom: 75px; */
 }
 
-main section#projects h2 { 
+main section.projects h2 { 
 	color: #ad6419; 
 	text-align: center; 
 }
 
-main section#projects h3 { 
+main section.projects h3 { 
 	color: #ffebaa; 
 	margin-bottom: 20px; 
 }
 
-main section#projects .projects-container-grid {
+main section.projects .projects-container-grid {
 	display: grid; 
 	grid-template-columns: minmax(362px, 1fr);
 	grid-gap: 5.2rem 4.3rem; 
@@ -28,21 +28,21 @@ main section#projects .projects-container-grid {
 
 /* Media Queries */
 @media only screen and (min-width: 1040px) {
-	main section#projects {  
+	main section.projects {  
 		padding: 5rem 6.3rem;
 	}
 	
-	main section#projects .projects-container-grid {
+	main section.projects .projects-container-grid {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 5.2rem 6rem;
 	}
 }
 
 @media only screen and (min-width: 1395px) {
-	main section#projects {  
+	main section.projects {  
 		padding: 5rem 6.5rem;
 	}
-	main section#projects .projects-container-grid {
+	main section.projects .projects-container-grid {
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 6rem 6.3rem;
 	}

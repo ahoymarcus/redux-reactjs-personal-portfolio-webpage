@@ -70,7 +70,7 @@ header, main {
 
 
 /* WELCOME SECTION */
-main #welcome-section { 
+main .welcome-section { 
 	/*clear: both;*/ 
 	display: flex; 
 	flex-direction:	column; 
@@ -81,11 +81,11 @@ main #welcome-section {
 	background-image: linear-gradient(#d9d0c8, aliceblue, #dbcaba); /*linear-gradient(linen, aliceblue, linen);*/ 
 	color: #2f2a1a; 
 }
-main #welcome-section h1 { 
+main .welcome-section h1 { 
 	font-size: 2em; 
 	margin-top: 10px;
 }
-main #welcome-section p { 
+main .welcome-section p { 
 	font-size: 1.4em;
 	text-align: center;
 	margin-top: 10px;	
@@ -93,7 +93,7 @@ main #welcome-section p {
 
  
 /* CONTACT SECTION */
-main section#contact { 
+main section.contact { 
 	color: black; 
 	background-color: #f7622b; 
 	display: flex; 
@@ -104,23 +104,23 @@ main section#contact {
 	text-align: center; 
 }
 
-main section#contact h2 { 
+main section.contact h2 { 
 	font-size: 1.9em; 
 }
 
-main section#contact p { 
+main section.contact p { 
 	text-align: center;
 	font-size: 1.7rem; 
 	font-weight: bold;
 }
 
-main section#contact .contact-links { 
+main section.contact .contact-links { 
 	display: flex; 
 	flex-direction: column;  
 	width: 100%; 
 }
 
-main section#contact .contact-links a { 
+main section.contact .contact-links a { 
 	color: #f3eacdc7; 
 	font-size: 1.8rem; 
 	font-weight: 800; 
@@ -129,13 +129,13 @@ main section#contact .contact-links a {
 
 
 @media only screen and (max-width: 463px) {
-	main section#contact .contact-links-container {
+	main section.contact .contact-links-container {
 		margin: 25px 0;
 	}
 }
 
 @media only screen and (min-width: 820px) {
-	main section#contact .contact-links-container {
+	main section.contact .contact-links-container {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly; 
