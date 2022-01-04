@@ -17,7 +17,7 @@ const AggregationTagItem = ({ tag }) => {
 
 	
 	return (
-		<li>#{tag} (<span className="number-values">{result}</span>)</li>
+		<li>#{tag} {result === 0 ? (<span className="number-values">{result}</span>) : null }</li>
 	);
 };
 

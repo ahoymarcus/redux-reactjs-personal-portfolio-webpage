@@ -59,14 +59,14 @@ const AggregationTab = () => {
 	};
 	
 	
-	useEffect(() => {
-		const timer = setTimeout(() => {
-			aggregateTags(allProjectsArr);
-			console.log(allProjectsArr);
-		}, 1000);
+	// useEffect(() => {
+		// const timer = setTimeout(() => {
+			// aggregateTags(allProjectsArr);
+			// console.log(allProjectsArr);
+		// }, 1000);
 		
-		return () => clearTimeout(timer);	
-	}, []);
+		// return () => clearTimeout(timer);	
+	// }, []);
 	
 	
 	

@@ -15,13 +15,13 @@ import './App.css';
 
 // components
 import Navbar from './components/Navbar';
-
 import SelectSection from './components/SelectSection';
 import { MemoizedAggregationTab } from './components/AggregationTab';
 import ProjectList from './components/ProjectList';
 import OtherProjectsSlider from './components/OtherProjectsSlider';
 import Footer from './components/Footer';
 
+// dados
 import { frontendProjects } from './data/frontendProjects';
 import { backendProjects } from './data/backendProjects';
 import { vanillaJSProjects } from './data/vanillaJSProjects';
@@ -34,10 +34,6 @@ function App() {
 	const dispatch = useDispatch();
 
 
-
-	const selectedSection = useSelector((state) => state.selectedSection.selectedSection);
-	console.log(selectedSection);
-
 	dispatch(setFrontendProjects(frontendProjects));
 	dispatch(setBackendProjects(backendProjects));
 	dispatch(setVanillaJsProjects(vanillaJSProjects));
@@ -46,6 +42,10 @@ function App() {
 	
 	dispatch(setMainTags(mainTags));
 	
+	
+	/* REFERENTE AO COMPONENTE SELECTEDSECTION */
+	const selectedSection = useSelector((state) => state.selectedSection.selectedSection);
+	console.log(selectedSection);
 	
 	
   return (

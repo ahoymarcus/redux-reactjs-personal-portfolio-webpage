@@ -4,7 +4,7 @@ import { ActionTypes } from '../constants/action-types';
 
 // SET_SELECTED_SECTION
 const initialState = {
-	selectedSection: '',
+	selectedSection: 'All',
 };
 
 
