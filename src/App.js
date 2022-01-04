@@ -15,6 +15,7 @@ import './App.css';
 
 // components
 import Navbar from './components/Navbar';
+//import { MemoizedAggregationTab } from './components/AggregationTab';
 import AggregationTab from './components/AggregationTab';
 import ProjectList from './components/ProjectList';
 import OtherProjectsSlider from './components/OtherProjectsSlider';
@@ -42,24 +43,6 @@ function App() {
 	
 	dispatch(setMainTags(mainTags));
 	
-	
-	// const renderFrontend = () => {
-		// if (isSelected === 'All' || isSelected === 'Frontend') {
-			// return ;
-		// }
-	// };
-	
-	// const renderBackend = () => {
-		// if (isSelected === 'All' || isSelected === 'Backend') {
-			// return ;
-		// }
-	// };
-	
-	// const renderOtherProjectsSection = () => {
-		// if (isSelected === 'All' || isSelected === 'VanillaJS') {
-			// return ;
-		// }
-	// };
 	
 
   return (

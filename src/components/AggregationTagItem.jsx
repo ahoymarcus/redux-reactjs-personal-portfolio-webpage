@@ -24,5 +24,7 @@ const AggregationTagItem = ({ tag }) => {
 
 
 export default AggregationTagItem;
+//export const MemoizedAggregationTagItem = React.memo(MemoizedAggregationTagItem);
+
 
 

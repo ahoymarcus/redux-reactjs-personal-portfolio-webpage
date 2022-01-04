@@ -13,11 +13,13 @@ import './AggregationTab.css';
 
 // components
 import AggregationTagItem from './AggregationTagItem';
-
+//import { MemoizedAggregationTagItem } from './AggregationTagItem';
 
 
 const AggregationTab = () => {
 	const dispatch = useDispatch();
+	
+	const [ isSelected, setIsSelected ] = useState('All');
 	
 	const selected = useSelector((state) => state.allProjects.selectedSection);	
 		
@@ -69,14 +71,19 @@ const AggregationTab = () => {
 			console.log(allProjectsArr);
 		}, 1000);
 		
-		return () => clearTimeout(timer);
+		return () => clearTimeout(timer);	
 	}, []);
+	
 	
 	const handleChange = (e) => {
 		console.log(e.target.value);
 		
-		dispatch(setSelectedSection(e.target.value));
+		setIsSelected(e.target.value)
 	};
+	
+	useEffect(() => {
+		dispatch(setSelectedSection(isSelected));
+	}, [isSelected]);
 	
 	
 	
@@ -118,6 +125,6 @@ const AggregationTab = () => {
 
 
 export default AggregationTab;
-
+//export const MemoizedAggregationTab = React.memo(AggregationTab);
 
 
