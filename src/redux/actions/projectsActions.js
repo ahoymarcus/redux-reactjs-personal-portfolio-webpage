@@ -59,12 +59,13 @@ export const setTagAddition = (tag) => {
 	};
 };
 
+/*
 export const setSelectedSection = (elemt) => {
 	return {
 		type: ActionTypes.SET_SELECTED_SECTION,
 		payload: elemt
 	};
-};
+};*/
 
 
 

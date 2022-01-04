@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { 
@@ -15,8 +15,9 @@ import './App.css';
 
 // components
 import Navbar from './components/Navbar';
-//import { MemoizedAggregationTab } from './components/AggregationTab';
-import AggregationTab from './components/AggregationTab';
+
+import SelectSection from './components/SelectSection';
+import { MemoizedAggregationTab } from './components/AggregationTab';
 import ProjectList from './components/ProjectList';
 import OtherProjectsSlider from './components/OtherProjectsSlider';
 import Footer from './components/Footer';
@@ -32,7 +33,9 @@ import { mainTags } from './common/main-tags';
 function App() {
 	const dispatch = useDispatch();
 
-	const selectedSection = useSelector((state) => state.allProjects.selectedSection);
+
+
+	const selectedSection = useSelector((state) => state.selectedSection.selectedSection);
 	console.log(selectedSection);
 
 	dispatch(setFrontendProjects(frontendProjects));
@@ -44,7 +47,7 @@ function App() {
 	dispatch(setMainTags(mainTags));
 	
 	
-
+	
   return (
     <>
       <header>
@@ -61,11 +64,19 @@ function App() {
 				</section>
 				
 				<section 
+					id="select-projects-section"
+					className="select-section"
+					aria-label="Aggregation Information"
+				>
+					<SelectSection />
+				</section>
+				
+				<section 
 					id="aggregation"
 					className="aggregation"
 					aria-label="Aggregation Information"
 				>
-					<AggregationTab />
+					<MemoizedAggregationTab />
 				</section>
 				
 				{selectedSection === 'All' || selectedSection === 'Frontend' ? 

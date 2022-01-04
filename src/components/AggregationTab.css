@@ -1,4 +1,4 @@
-/* Other Projects Section */
+/* Aggregation Section */
 main section.aggregation {
 	background-color: #080806; /*#8b897b; #7a7652;*/
 	color: #d7c773; 
@@ -21,13 +21,36 @@ main section.aggregation h3 {
 	text-align: center;
 }
 
+.tag-list-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	
+	/*display: flex;
+	flex-wrap: wrap;*/
+	
+	padding: 15px 0px 15px 40px;
+	margin-top: 30px;
+	background-color: #ffffff24;
+}
+
+
+.tag-list-container li {
+	font-size: 1rem;
+	padding: 5px;
+	
+	/*text-align: center;*/
+}
+
+
+
+
+
+
 .agregationtab-header {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
-
 
 .select-option {
 	width: 80%;
@@ -60,31 +83,6 @@ button {
 	border-radius: 10px;
 	margin-left: 3px;
 }
-
-
-
-
-
-.tag-list-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	
-	/*display: flex;
-	flex-wrap: wrap;*/
-	
-	padding: 15px 0px 15px 40px;
-	margin-top: 30px;
-	background-color: #ffffff24;
-}
-
-
-.tag-list-container li {
-	font-size: 1rem;
-	padding: 5px;
-	
-	/*text-align: center;*/
-}
-
 
 
 

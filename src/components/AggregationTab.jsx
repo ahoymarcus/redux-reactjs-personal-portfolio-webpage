@@ -3,25 +3,19 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { mainTagsNames } from '../common/main-tags';
 
-import { 
-	setTagAddition, 
-	setSelectedSection 
-} from '../redux/actions/projectsActions';
+import { setTagAddition } from '../redux/actions/projectsActions';
 
 // styles
 import './AggregationTab.css';
 
 // components
 import AggregationTagItem from './AggregationTagItem';
-//import { MemoizedAggregationTagItem } from './AggregationTagItem';
+
 
 
 const AggregationTab = () => {
 	const dispatch = useDispatch();
 	
-	const [ isSelected, setIsSelected ] = useState('All');
-	
-	const selected = useSelector((state) => state.allProjects.selectedSection);	
 		
 	const allProjectsObject = useSelector((state) => state.allProjects);
 	const allProjectsArr = useSelector((state) => state.allProjects.allProjects);
@@ -75,33 +69,9 @@ const AggregationTab = () => {
 	}, []);
 	
 	
-	const handleChange = (e) => {
-		console.log(e.target.value);
-		
-		setIsSelected(e.target.value)
-	};
-	
-	useEffect(() => {
-		dispatch(setSelectedSection(isSelected));
-	}, [isSelected]);
-	
-	
 	
 	return (
 		<div className="projects">
-			<div className="agregationtab-header">
-				<h2>My Technologies</h2>
-				<div className="select-option">
-					<form>
-						<select value={selected} onChange={handleChange}>
-							<option value="All">All</option>
-							<option value="Frontend">Frontend</option>
-							<option value="Backend">Backend</option>
-							<option value="VanillaJS">VanillaJS</option>
-						</select>						
-					</form>
-				</div>
-			</div>
 			<div className="info-numbers">
 				<h3>Total de Projetos: <span className="number-values">{totalProjectsArraySize}</span> projetos</h3>
 			</div>
@@ -114,8 +84,6 @@ const AggregationTab = () => {
 						}
 					})}
 				</ul>
-				
-				
 			</div>
 			
 		</div>
@@ -124,7 +92,7 @@ const AggregationTab = () => {
 
 
 
-export default AggregationTab;
-//export const MemoizedAggregationTab = React.memo(AggregationTab);
+//export default AggregationTab;
+export const MemoizedAggregationTab = React.memo(AggregationTab);
 
 
