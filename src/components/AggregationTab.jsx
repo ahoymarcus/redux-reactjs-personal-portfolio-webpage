@@ -9,7 +9,7 @@ import { setTagAddition } from '../redux/actions/projectsActions';
 import './AggregationTab.css';
 
 // components
-import AggregateTagItem from './AggregateTagItem';
+import AggregationTagItem from './AggregationTagItem';
 
 
 
@@ -108,7 +108,7 @@ const AggregationTab = () => {
 				<ul className="tag-list-container">
 					{uniqueTagsArr.map((tag, index) => {
 						if (mainTagsNames.includes(tag.toLowerCase())) {
-							return <AggregateTagItem key={index} tag={tag} />;
+							return <AggregationTagItem key={index} tag={tag} />;
 						}
 					})}
 				</ul>

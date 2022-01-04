@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 
 
 	
-const AggregateTagItem = ({ tag }) => {
+const AggregationTagItem = ({ tag }) => {
 	//console.log(tag);
 	
 	const mainTags = useSelector((state) => state.allProjects.mainTags);
@@ -23,6 +23,6 @@ const AggregateTagItem = ({ tag }) => {
 
 
 
-export default AggregateTagItem;
+export default AggregationTagItem;
 
 
