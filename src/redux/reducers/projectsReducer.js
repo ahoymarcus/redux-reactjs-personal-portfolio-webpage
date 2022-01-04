@@ -16,7 +16,7 @@ const initialState = {
 	webDesign: [],
 	allProjects: [],
 	mainTags: [],
-	selectedSection: 'all',
+	selectedSection: 'All',
 };
 
 
@@ -49,7 +49,7 @@ export const projectsReducer = (state = initialState, { type, payload }) => {
 			
 			return { ...state, mainTags: tempMainTags };
 		case ActionTypes.SET_SELECTED_SECTION:
-			return { ...state, selected: payload };
+			return { ...state, selectedSection: payload };
 		default:
 			return state;
 	}

@@ -32,6 +32,7 @@ function App() {
 	const dispatch = useDispatch();
 
 	const selectedSection = useSelector((state) => state.allProjects.selectedSection);
+	console.log(selectedSection);
 
 	dispatch(setFrontendProjects(frontendProjects));
 	dispatch(setBackendProjects(backendProjects));
@@ -84,30 +85,35 @@ function App() {
 					<AggregationTab />
 				</section>
 				
-				<section 
-					id="frontend-projects"
-					className="projects" 
-					aria-label="Web Development Projects"
-				>
-					<ProjectList type="frontend" />
-				</section>
+				{selectedSection === 'All' || selectedSection === 'Frontend' ? 
+					<section 
+						id="frontend-projects"
+						className="projects" 
+						aria-label="Web Development Projects"
+					>
+						<ProjectList type="frontend" />
+					</section>
+				 : null}
 				
-				<section 
-					id="backend-projects"
-					className="projects" 
-					aria-label="Web Development Projects"
-				>
-					
-					<ProjectList type="backend" />
-				</section>
+				{selectedSection === 'All' || selectedSection === 'Backend' ? 
+					<section 
+						id="backend-projects"
+						className="projects" 
+						aria-label="Web Development Projects"
+					>	
+						<ProjectList type="backend" />
+					</section>
+				 : null}
 				
-				<section 
-					id="other-projects" 
-					className="other-projects" 
-					aria-label="Web Development Projects"
-				>
-					<OtherProjectsSlider />
-				</section>
+				{selectedSection === 'All' || selectedSection === 'VanillaJS' ? 
+					<section 
+						id="other-projects" 
+						className="other-projects" 
+						aria-label="Web Development Projects"
+					>
+						<OtherProjectsSlider />
+					</section>
+				 : null}
 				
 				
 				<section 

@@ -19,7 +19,8 @@ import AggregationTagItem from './AggregationTagItem';
 const AggregationTab = () => {
 	const dispatch = useDispatch();
 	
-	const selected = useSelector((state) => state.allProjects.selected);	
+	const selected = useSelector((state) => state.allProjects.selectedSection);	
+		
 	const allProjectsObject = useSelector((state) => state.allProjects);
 	const allProjectsArr = useSelector((state) => state.allProjects.allProjects);
 	const mainTags = useSelector((state) => state.allProjects.mainTags);
