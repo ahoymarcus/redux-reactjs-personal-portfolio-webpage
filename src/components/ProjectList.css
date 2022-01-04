@@ -1,11 +1,11 @@
 /* Projects Section - List */	
 main section#projects { 
 	color: #ffffffc7; 
-	padding: 5rem 3rem;
+	padding: 2rem 3rem 5rem;
 }
 
 main section#projects .projects { 
-	margin-bottom: 75px; 
+	/*margin-bottom: 75px; */
 }
 
 main section#projects h2 { 

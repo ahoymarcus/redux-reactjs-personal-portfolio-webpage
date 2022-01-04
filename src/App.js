@@ -87,6 +87,13 @@ function App() {
 					aria-label="Web Development Projects"
 				>
 					<ProjectList type="frontend" />
+				</section>
+				
+				<section 
+					id="projects" 
+					aria-label="Web Development Projects"
+				>
+					
 					<ProjectList type="backend" />
 				</section>
 				
