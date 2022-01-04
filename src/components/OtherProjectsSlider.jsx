@@ -49,7 +49,9 @@ const OtherProjectsSlider = () => {
 	
 	
 	return (
-	<div >
+		<div >
+			<h2>Other Projects</h2>
+		
 			<div className="btn-container">
 				<button className="prev-btn" onClick={prevProject}>
 					<FaChevronLeft />
@@ -82,6 +84,8 @@ const OtherProjectsSlider = () => {
 					
 				</article>
 			</div>
+			
+			<h3>Vanilla JavaScript and Web Desing</h3>
 		</div>
 	);
 };

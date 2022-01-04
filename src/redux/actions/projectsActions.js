@@ -9,7 +9,7 @@ import { ActionTypes } from '../constants/action-types';
 // SET_ALL_PROJECTS
 // SET_MAIN_TAGS
 // SET_TAG_COUNT
-// SET_SELECTED
+// SET_SELECTED_SECTION
 export const setFrontendProjects = (frontend) => {
 	return {
 		type: ActionTypes.SET_FRONTEND_PROJECTS,
@@ -59,9 +59,9 @@ export const setTagAddition = (tag) => {
 	};
 };
 
-export const setSelected = (elemt) => {
+export const setSelectedSection = (elemt) => {
 	return {
-		type: ActionTypes.SET_SELECTED,
+		type: ActionTypes.SET_SELECTED_SECTION,
 		payload: elemt
 	};
 };

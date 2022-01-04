@@ -8,7 +8,7 @@ import { ActionTypes } from '../constants/action-types';
 // SET_ALL_PROJECTS
 // SET_MAIN_TAGS
 // SET_TAG_COUNT
-// SET_SELECTED
+// SET_SELECTED_SECTION
 const initialState = {
 	frontend: [],
 	backend: [],
@@ -16,7 +16,7 @@ const initialState = {
 	webDesign: [],
 	allProjects: [],
 	mainTags: [],
-	selected: 'all',
+	selectedSection: 'all',
 };
 
 
@@ -48,7 +48,7 @@ export const projectsReducer = (state = initialState, { type, payload }) => {
 			});
 			
 			return { ...state, mainTags: tempMainTags };
-		case ActionTypes.SET_SELECTED:
+		case ActionTypes.SET_SELECTED_SECTION:
 			return { ...state, selected: payload };
 		default:
 			return state;

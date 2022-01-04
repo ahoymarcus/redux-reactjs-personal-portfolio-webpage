@@ -1,5 +1,5 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { 
 	setFrontendProjects,
@@ -31,6 +31,7 @@ import { mainTags } from './common/main-tags';
 function App() {
 	const dispatch = useDispatch();
 
+	const selectedSection = useSelector((state) => state.allProjects.selectedSection);
 
 	dispatch(setFrontendProjects(frontendProjects));
 	dispatch(setBackendProjects(backendProjects));
@@ -39,7 +40,26 @@ function App() {
 	dispatch(setAllProjects([...frontendProjects, ...backendProjects, ...vanillaJSProjects, ...webdesignProjects]));
 	
 	dispatch(setMainTags(mainTags));
-
+	
+	
+	// const renderFrontend = () => {
+		// if (isSelected === 'All' || isSelected === 'Frontend') {
+			// return ;
+		// }
+	// };
+	
+	// const renderBackend = () => {
+		// if (isSelected === 'All' || isSelected === 'Backend') {
+			// return ;
+		// }
+	// };
+	
+	// const renderOtherProjectsSection = () => {
+		// if (isSelected === 'All' || isSelected === 'VanillaJS') {
+			// return ;
+		// }
+	// };
+	
 
   return (
     <>
@@ -59,7 +79,6 @@ function App() {
 					id="aggregation"
 					aria-label="Aggregation Information"
 				>
-					
 					<AggregationTab />
 				</section>
 				
@@ -67,22 +86,15 @@ function App() {
 					id="projects" 
 					aria-label="Web Development Projects"
 				>
-					<h2>These are some of my projects</h2>
-				
 					<ProjectList type="frontend" />
-					<ProjectList type="backend" />		
+					<ProjectList type="backend" />
 				</section>
 				
 				<section 
 					id="other-projects" 
 					aria-label="Web Development Projects"
 				>
-					<h2>Other Projects</h2>
-					
 					<OtherProjectsSlider />
-					
-					<h3>Vanilla JavaScript and Web Desing</h3>
-						 
 				</section>
 				
 				

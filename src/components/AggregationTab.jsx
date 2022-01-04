@@ -3,7 +3,10 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import { mainTagsNames } from '../common/main-tags';
 
-import { setTagAddition, setSelected } from '../redux/actions/projectsActions';
+import { 
+	setTagAddition, 
+	setSelectedSection 
+} from '../redux/actions/projectsActions';
 
 // styles
 import './AggregationTab.css';
@@ -71,7 +74,7 @@ const AggregationTab = () => {
 	const handleChange = (e) => {
 		console.log(e.target.value);
 		
-		dispatch(setSelected(e.target.value));
+		dispatch(setSelectedSection(e.target.value));
 	};
 	
 	
@@ -84,9 +87,9 @@ const AggregationTab = () => {
 					<form>
 						<select value={selected} onChange={handleChange}>
 							<option value="All">All</option>
-							<option value="frontend">Frontend</option>
-							<option value="backend">Backend</option>
-							<option value="vanillaJS">VanillaJS</option>
+							<option value="Frontend">Frontend</option>
+							<option value="Backend">Backend</option>
+							<option value="VanillaJS">VanillaJS</option>
 						</select>						
 					</form>
 				</div>
