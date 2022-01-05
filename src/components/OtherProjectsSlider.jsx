@@ -85,7 +85,7 @@ const OtherProjectsSlider = () => {
 				</article>
 			</div>
 			
-			<h3>Vanilla JavaScript and Web Desing</h3>
+			<h3>Vanilla JavaScript and Web Design</h3>
 		</div>
 	);
 };
