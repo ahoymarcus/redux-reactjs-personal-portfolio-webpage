@@ -8,6 +8,14 @@ export let frontendProjects = [
 		tags: ['react-js', 'use-context', 'react-router-dom', 'react-icons', 'styled-components', 'api rest'],
 	},
 	{
+		title: 'Next.JS Blog App',
+		urlRepository: 'https://github.com/ahoymarcus/nextjs-org-blog-tutorial',
+		urlApp: 'https://nextjs-org-blog-tutorial.vercel.app/',
+		image: '/images/frontend/nextjs-org-blog-tutorial-01.png',
+		description: 'Um app feito com Next-JS, como parte do tutorial da Next.JS.org. Entre outros, é trabalhado o tratamento do conteúdo estático, Roteamento no frontend, estilização CSS, uso dinâmico de dados, etc...',
+		tags: ['React-JS', 'Next-JS', 'API REST'],
+	},
+	{
 		title: 'redux Shopping App',
 		urlRepository: 'https://github.com/ahoymarcus/redux-reactjs-shopping-cart',
 		urlApp: 'https://redux-axios-reactjs-shopping-cart.netlify.app/',
@@ -16,15 +24,7 @@ export let frontendProjects = [
 		tags: ['react-js', 'redux', 'react-redux', 'react-router-dom', 'styled-components', 'api rest', 'axios'],
 	},
 	{
-		title: 'redux Cinema App',
-		urlRepository: 'https://github.com/ahoymarcus/redux-toolkit-reactjs-cinema',
-		urlApp: 'https://redux-toolkit-reactjs-cinema.netlify.app/',
-		image: '/images/frontend/redux-toolkit-reactjs-cinema-01.png',
-		description: 'App react-js de filmes-sériees. Como funcionalidades especiais usa o react-router-dom para roteamento no frontend e o reduxjs-toolkit para simplificar o uso do redux ao gerenciar o estado geral da aplicação.',
-		tags: ['react-js', 'redux', 'reduxjs-toolkit', 'react-router-dom', 'api rest', 'axios', 'scss'],
-	},
-	{
-		title: 'Typescript Cart App',
+		title: 'Typescript Shopping App',
 		urlRepository: 'https://github.com/ahoymarcus/typescript-reactjs-shopping-cart-app',
 		urlApp: 'https://typescript-reactjs-shopping-cart-app.netlify.app/',
 		image: '/images/frontend/typescript-reactjs-shopping-cart-app.png',
@@ -32,12 +32,20 @@ export let frontendProjects = [
 		tags: ['react-js', 'react-query', 'styled-components', 'typescript', 'api rest'],
 	},
 	{
-		title: 'React-JS Cart App',
+		title: 'React-JS Shopping App',
 		urlRepository: 'https://github.com/ahoymarcus/reactjs-shopping-cart-with-reducer-app',
 		urlApp: 'https://reactjs-shopping-cart-with-use-reducer-app.netlify.app/',
 		image: '/images/frontend/reactjs-shopping-cart-with-usereducer-app.png',
 		description: 'Como funcionalidade mais avançada este app usa os Hooks use-context e use-reducer para controlar a passagem de valores entre as funções de renderização para a agregação dos valores do carrinho',
 		tags: ['react-js', 'use-context', 'use-reducer', 'api rest'],
+	},
+	{
+		title: 'redux Cinema App',
+		urlRepository: 'https://github.com/ahoymarcus/redux-toolkit-reactjs-cinema',
+		urlApp: 'https://redux-toolkit-reactjs-cinema.netlify.app/',
+		image: '/images/frontend/redux-toolkit-reactjs-cinema-01.png',
+		description: 'App react-js de filmes-sériees. Como funcionalidades especiais usa o react-router-dom para roteamento no frontend e o reduxjs-toolkit para simplificar o uso do redux ao gerenciar o estado geral da aplicação.',
+		tags: ['react-js', 'redux', 'reduxjs-toolkit', 'react-router-dom', 'api rest', 'axios', 'scss'],
 	},
 	{
 		title: 'Cocktail Drinks App',
