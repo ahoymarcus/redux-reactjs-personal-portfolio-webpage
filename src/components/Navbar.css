@@ -17,4 +17,10 @@ nav#navbar a {
 	color: inherit; 
 }
 
+nav#navbar a:hover {
+	color: white;
+}
+
+
+
 
