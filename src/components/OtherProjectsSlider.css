@@ -32,6 +32,11 @@ main section.other-projects h5 {
 
 main section.other-projects h6 { 
 	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+main section.other-projects h6 a:hover {
+	color: black; /*rgb(36 151 36);*/
 }
 
 

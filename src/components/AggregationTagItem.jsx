@@ -17,7 +17,7 @@ const AggregationTagItem = ({ tag }) => {
 
 	
 	return (
-		<li>#{tag} {result === 0 ? (<span className="number-values">{result}</span>) : null }</li>
+		<li>#{tag.toUpperCase()} {result === 0 ? (<span className="number-values">{result}</span>) : null }</li>
 	);
 };
 

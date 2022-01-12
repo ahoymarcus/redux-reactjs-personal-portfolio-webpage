@@ -73,7 +73,7 @@ const OtherProjectsSlider = () => {
 					<div className="tags">
 						<ul>
 							{tags.map((tag, index) => {
-								return <p key={index} style={{color: 'rgb(36 151 36)'}}>#{tag}</p>;
+								return <p key={index} style={{color: 'rgb(36 151 36)'}}>#{tag.toUpperCase()}</p>;
 							})}
 						</ul>
 					</div>

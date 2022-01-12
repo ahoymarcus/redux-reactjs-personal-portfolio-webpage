@@ -13,7 +13,7 @@ export let frontendProjects = [
 		urlApp: 'https://nextjs-org-blog-tutorial.vercel.app/',
 		image: '/images/frontend/nextjs-org-blog-tutorial-01.png',
 		description: 'Um app feito com Next-JS, como parte do tutorial da Next.JS.org. Entre outros, é trabalhado o tratamento do conteúdo estático, Roteamento no frontend, estilização CSS, uso dinâmico de dados, etc...',
-		tags: ['React-JS', 'Next-JS', 'API REST'],
+		tags: ['react-js', 'next-js', 'api rest'],
 	},
 	{
 		title: 'redux Shopping App',
