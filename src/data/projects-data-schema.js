@@ -1,11 +1,11 @@
 export let projectsDataSchema = [
 	{
-		title: '',
-		urlRepository: '',
-		urlApp: '',
-		image: '/images//',
+		title: 'Higher Order Component App',
+		urlRepository: 'https://github.com/ahoymarcus/reactjs-higher-order-component-study',
+		urlApp: 'https://reactjs-higher-order-component-study.netlify.app/',
+		image: '/images/frontend/',
 		description: '',
-		tags: ['React-JS', 'Redux', 'Reduxjs-Toolkit', 'React-Router-Dom', 'API REST', 'Axios', 'Node-SCSS', 'React-Slick'],
+		tags: ['react-js', 'redux', 'reduxjs-toolkit', 'react-router-dom', 'api rest', 'axios', 'node-scss', 'React-Slick'],
 	},
 ];
 

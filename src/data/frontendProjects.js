@@ -48,6 +48,14 @@ export let frontendProjects = [
 		tags: ['react-js', 'redux', 'reduxjs-toolkit', 'react-router-dom', 'api rest', 'axios', 'scss'],
 	},
 	{
+		title: 'Higher Order Component App',
+		urlRepository: 'https://github.com/ahoymarcus/reactjs-higher-order-component-study',
+		urlApp: 'https://reactjs-higher-order-component-study.netlify.app/',
+		image: '/images/frontend/reactjs-higher-order-component.png',
+		description: 'Um app de estudo para usar a funcionalidade dos Higher Order Components do React-JS para refatorar lógicas duplicadas de dois componentes de listas sendo renderizados pela aplicação.',
+		tags: ['react-js', 'api rest'],
+	},
+	{
 		title: 'Cocktail Drinks App',
 		urlRepository: 'https://github.com/ahoymarcus/reactjs-cocktails-page-with-router-app',
 		urlApp: 'https://reactjs-cocktails-page-with-router-app.netlify.app/',
